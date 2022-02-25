@@ -11,6 +11,7 @@ public class table {
                 for(int j=1;j<4;j++){
                     if(i*j>2)
                         continue;
+
                     System.out.println(i*j);
                 }
                 System.out.println(a);
