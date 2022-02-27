@@ -12,7 +12,6 @@ public class DecToBin {
         System.out.print("Please enter decimal number: ");
         int dec = input.nextInt();
         int showNum = dec;
-        int bin = 0;
         int times = 0;
         int[] num = new int[1000];
         //2.Convert decimal numbers to binary numbers
