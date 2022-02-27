@@ -10,7 +10,7 @@ public class PentagonalNumber {
     }
 
     public static void main(String[] args) {
-        //1.Display the pentagonal numbers
+        //1. Display the pentagonal numbers
         int num = 1;
         for (int i = 0; i <= 9; i++) {
             for (int j = 0; j <= 9; j++) {

@@ -26,7 +26,6 @@ public class PalindromeInteger {
         else return false;
     }
     public static void main(String[] args) {
-        //1.
         Scanner input=new Scanner(System.in);
         System.out.print("Enter a integer: ");
         int num = input.nextInt();

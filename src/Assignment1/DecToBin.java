@@ -7,14 +7,14 @@ import java.util.Scanner;
 public class DecToBin {
 
     public static void main(String[] args) {
-        //1.Enter decimal number
+        //1. Enter decimal number
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter decimal number: ");
         int dec = input.nextInt();
         int showNum = dec;
         int times = 0;
         int[] num = new int[1000];
-        //2.Convert decimal numbers to binary numbers
+        //2. Convert decimal numbers to binary numbers
         while (dec >= 2) {
             times++;
             num[times] = dec % 2;

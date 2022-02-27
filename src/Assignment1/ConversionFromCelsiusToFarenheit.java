@@ -4,9 +4,9 @@ package Assignment1;
 public class ConversionFromCelsiusToFarenheit {
 
     public static void main(String[] args) {
-        //1.Show the title
+        //1. Show the title
         System.out.println("Celsius       Fahrenheit");
-        //2.Display the table
+        //2. Display the table
         double fahrenheit = 0.0;
         for (int celsius = 0; celsius <= 100; celsius += 2) {
             System.out.print(celsius);

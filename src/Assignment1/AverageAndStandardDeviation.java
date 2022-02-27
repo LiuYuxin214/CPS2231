@@ -7,14 +7,14 @@ import java.util.Scanner;
 public class AverageAndStandardDeviation {
 
     public static void main(String[] args) {
-        //1.Get the input from the user
+        //1. Get the input from the user
         double[] num = new double[10];
         Scanner input = new Scanner(System.in);
         System.out.print("Enter 10 numbers: ");
         for (int i = 0; i < 10; i++) {
             num[i] = input.nextDouble();
         }
-        //2.Calculate the mean and the standard deviation
+        //2. Calculate the mean and the standard deviation
         double mean = 0;
         double sd = 0;
         double sum = 0;

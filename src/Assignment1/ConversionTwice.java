@@ -5,11 +5,11 @@ package Assignment1;
 public class ConversionTwice {
 
     public static void main(String[] args) {
-        //1.Show the title
+        //1. Show the title
         System.out.print("Celsius       Fahrenheit");
         System.out.print("  |  ");
         System.out.println("Fahrenheit       Celsius");
-        //2.Display the table1
+        //2. Display the table1
         double fahrenheit = 0.0;
         int fahrenheit2 = 20;
         double celsius2 = 0.0;
