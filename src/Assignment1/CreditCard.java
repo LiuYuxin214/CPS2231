@@ -2,6 +2,7 @@ package Assignment1;
 
 import java.util.Scanner;
 
+//Purpose: prompts the user to enter a credit card number as a long integer. Display whether the number is valid or invalid
 public class CreditCard {
     public static void main(String[] args) {
         long creditCardNumber;
