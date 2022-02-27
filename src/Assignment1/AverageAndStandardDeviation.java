@@ -28,7 +28,7 @@ public class AverageAndStandardDeviation {
             sum2 += Math.pow(num[i], 2);
         }
         sd = Math.sqrt((sum2 - Math.pow(sum, 2) / 10) / (10 - 1));
-        //3.Display the result
+        //3. Display the result
         System.out.println("The mean is " + mean);
         System.out.println("The standard deviation is " + sd);
     }
