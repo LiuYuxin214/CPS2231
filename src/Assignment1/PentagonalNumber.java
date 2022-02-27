@@ -1,6 +1,6 @@
 package Assignment1;
 
-//Purpose:Show the pentagonal numbers
+//Purpose: Show the pentagonal numbers
 //Main idea: n * (3 * n - 1) / 2
 public class PentagonalNumber {
 

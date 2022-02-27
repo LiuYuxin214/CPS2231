@@ -2,8 +2,8 @@ package Assignment1;
 
 import java.util.Scanner;
 
-//Purpose:
-//Main idea: 
+//Purpose: prompts the user to enter an integer and reports whether the integer is a palindrome
+//Main idea: A number is a palindrome if its reversal is the same as itself.
 public class PalindromeInteger {
 
     // Return the reversal of an integer, e.g., reverse(456) returns 654
