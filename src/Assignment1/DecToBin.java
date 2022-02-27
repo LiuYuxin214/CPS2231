@@ -3,7 +3,7 @@ package Assignment1;
 import java.util.Scanner;
 
 //Purpose: Convert decimal numbers to binary numbers
-//Main idea: 
+//Main idea: The remainder divided by 2 is arranged in reverse order, and then the last quotient is placed first
 public class DecToBin {
 
     public static void main(String[] args) {
