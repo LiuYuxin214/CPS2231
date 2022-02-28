@@ -28,7 +28,6 @@ public class OccurrencesOfASpecifiedCharacter {
         System.out.print("Please enter a character: ");
         String in = input.next();
         char target = in.charAt(0);
-        System.out.println(source.indexOf(target, 2));
         System.out.println("There is " + count(source, target) + " character in total");
     }
 
