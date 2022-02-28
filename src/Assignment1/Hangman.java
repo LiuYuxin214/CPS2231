@@ -16,7 +16,7 @@ public class Hangman {
         while (true) {
             System.out.print("(Guess) Enter a letter in word ");
             for (int i = 0; i < str.length(); i++) {
-                System.out.print(present[i++]);
+                System.out.print(present[i]);
             }
             System.out.print(" > ");
             String letter = input.next();
