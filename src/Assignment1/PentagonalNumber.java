@@ -17,7 +17,7 @@ public class PentagonalNumber {
                 System.out.printf("%7d", getPentagonalNumber(num));
                 num++;
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 

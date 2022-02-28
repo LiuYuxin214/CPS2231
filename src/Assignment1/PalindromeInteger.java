@@ -22,8 +22,7 @@ public class PalindromeInteger {
     }
     // Return true if number is a palindrome
     public static boolean isPalindrome(int number){
-        if(number == reverse(number)) return true;
-        else return false;
+        return number == reverse(number);
     }
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
