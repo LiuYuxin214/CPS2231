@@ -6,7 +6,7 @@ import java.util.Scanner;
 //Main idea: String
 public class Hangman {
 
-    public static int Guess(String str) {
+    public static int guess(String str) {
         Scanner input = new Scanner(System.in);
         int count = 0, number = str.length();
         char[] present = new char[number];
@@ -47,7 +47,7 @@ public class Hangman {
             String[] words = {"write", "that", "program", "science", "computer"};
             int pos = (int) (Math.random() * 5);
             String str = words[pos];
-            int n = Guess(str);
+            int n = guess(str);
             System.out.println("The word is " + str + ". You missed " + n + " time.");
             System.out.print("Do you want to guess for another word? Enter y or n>");
             String s = input.next();
