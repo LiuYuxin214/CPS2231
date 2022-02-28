@@ -2,6 +2,8 @@ package Assignment1;
 
 import java.util.Scanner;
 
+//Purpose: Play the hangman game
+//Main idea: String
 public class Hangman {
 
     public static int Guess(String str) {
