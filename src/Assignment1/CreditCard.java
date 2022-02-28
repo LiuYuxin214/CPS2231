@@ -4,14 +4,6 @@ import java.util.Scanner;
 
 //Purpose: prompts the user to enter a credit card number as a long integer. Display whether the number is valid or invalid
 public class CreditCard {
-    public static void main(String[] args) {
-        long creditCardNumber;
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter a credit card number as a long integer: ");
-        creditCardNumber = input.nextLong();
-        if (isValid(creditCardNumber)) System.out.println(creditCardNumber + " is valid");
-        else System.out.println(creditCardNumber + " is invalid");
-    }
 
     /** Return true if the card number is valid */
     public static boolean isValid(long number) {
@@ -66,4 +58,14 @@ public class CreditCard {
         long prefixNumber = number / (long) Math.pow(10, getSize(number) - k);
         return prefixNumber;
     }
+
+    public static void main(String[] args) {
+        long creditCardNumber;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a credit card number as a long integer: ");
+        creditCardNumber = input.nextLong();
+        if (isValid(creditCardNumber)) System.out.println(creditCardNumber + " is valid");
+        else System.out.println(creditCardNumber + " is invalid");
+    }
+
 }
