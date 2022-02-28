@@ -1,4 +1,5 @@
 package Assignment1;
+
 //Purpose: Conversion from Cº to Fº and list a conversion table
 //Main idea: fahrenheit = celsius * 9/5 + 32
 public class ConversionFromCelsiusToFarenheit {
@@ -20,4 +21,3 @@ public class ConversionFromCelsiusToFarenheit {
     }
 
 }
-
