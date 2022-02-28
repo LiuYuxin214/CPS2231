@@ -50,7 +50,7 @@ public class Hangman {
             System.out.println("The word is " + str + ". You missed " + error + " time.");
             System.out.print("Do you want to guess for another word? Enter y or n>");
             String s = input.next();
-            if (s.equals("ny")) break;
+            if (s.equals("n")) break;
         }
         System.out.println("Game over!");
     }
