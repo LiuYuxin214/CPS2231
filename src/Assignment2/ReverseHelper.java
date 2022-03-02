@@ -22,7 +22,11 @@ public class ReverseHelper {
         System.out.print("Enter a string: ");
         String s = input.nextLine();
         size = s.length();
-        System.out.println("The reverse is " + reverse(s, size - 1));
+        String result = reverse(s, size - 1);
+        System.out.print("The reverse is ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(result.charAt(i));
+        }
     }
 
 }
