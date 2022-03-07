@@ -16,23 +16,23 @@ public class FindFurthestPoints {
 
 // p1 and p2 are the indices in the points' array
         int p1 = 0, p2 = 1; // Initial two points
-        double shortestDistance = distance(points[p1][0], points[p1][1], points[p2][0], points[p2][1]); // Initialize shortestDistance
+        double furthestDistance = distance(points[p1][0], points[p1][1], points[p2][0], points[p2][1]); // Initialize furthestDistance
 
 // Compute distance for every two points
         for (int i = 0; i < points.length; i++) {
             for (int j = i + 1; j < points.length; j++) {
                 double distance = distance(points[i][0], points[i][1], points[j][0], points[j][1]); // Find distance
 
-                if (shortestDistance > distance) {
+                if (furthestDistance < distance) {
                     p1 = i; // Update p1
                     p2 = j; // Update p2
-                    shortestDistance = distance; // Update shortestDistance
+                    furthestDistance = distance; // Update furthestDistance
                 }
             }
         }
 
 // Display result
-        System.out.println("The closest two points are " + "(" + points[p1][0] + ", " + points[p1][1] + ") and (" + points[p2][0] + ", " + points[p2][1] + ")");
+        System.out.println("The furthest two points are " + "(" + points[p1][0] + ", " + points[p1][1] + ") and (" + points[p2][0] + ", " + points[p2][1] + ")");
     }
 
     /**
