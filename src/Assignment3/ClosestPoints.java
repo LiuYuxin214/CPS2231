@@ -25,13 +25,10 @@ public class ClosestPoints {
             int count = 0;
             for (int j = i + 1; j < points.length - 1; ++j) {
                 double distance = distance(points[i][0], points[i][1], points[j][0], points[j][1]);
-
                 if (distance <= points[i][2]) {
                     points[i][2] = distance;
                     if (points[i][2] <= closest) closestpoints[i][count++] = j;
                 }
-
-
                 if (closest > distance) closest = distance;
             }
         }

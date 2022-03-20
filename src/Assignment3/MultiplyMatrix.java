@@ -2,7 +2,7 @@ package Assignment3;
 
 import java.util.Scanner;
 
-public class Matrices {
+public class MultiplyMatrix {
     public static double[][] multiplyMatrix(double[][] a, double[][] b) {
         double[][] result = new double[a.length][b[0].length];
         for (int i = 0; i < a.length; i++) {
