@@ -13,9 +13,9 @@ public class TowerOfHanoi {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("Please enter the number of disks: ");
-        int disks = scanner.nextInt();
+        int disks = input.nextInt();
         System.out.println("The number of moves: " + hanoi(disks));
     }
 
