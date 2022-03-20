@@ -5,12 +5,10 @@ import java.util.Scanner;
 public class Employee {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        final int DAY = 7;
-        final int EMPLOYEE = 8;
-        int[][] hours = new int[EMPLOYEE][DAY];
+        int[][] hours = new int[8][7];
         System.out.println("Please enter the data of employee: ");
-        for (int i = 0; i < EMPLOYEE; i++) {
-            for (int j = 0; j < DAY; j++)
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 7; j++)
                 hours[i][j] = input.nextInt();
         }
 
