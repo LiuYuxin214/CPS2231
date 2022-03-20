@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Matrices {
     public static double[][] multiplyMatrix(double[][] a, double[][] b) {
-        double[][] c = new double[a.length][b[0].length];
+        double[][] result = new double[a.length][b[0].length];
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < b[0].length; j++)
                 for (int t = 0; t < a[0].length; t++) {
-                    c[i][j] += a[i][t] * b[t][j];
+                    result[i][j] += a[i][t] * b[t][j];
                 }
         }
-        return c;
+        return result;
 
     }
 
@@ -26,7 +26,6 @@ public class Matrices {
     }
 
     public static double[][] enterMatrix1() {
-
         Scanner input = new Scanner(System.in);
         double[][] x = new double[3][3];
         System.out.print("Enter matrix1: ");
@@ -37,7 +36,6 @@ public class Matrices {
     }
 
     public static double[][] enterMatrix2() {
-
         Scanner input = new Scanner(System.in);
         double[][] x = new double[3][3];
         System.out.print("Enter matrix2: ");
