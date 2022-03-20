@@ -29,8 +29,6 @@ public class Explore {
 
             if (rowSum == 0) result.append("All 0s on row " + i + "\n");
             if (rowSum == array[0].length) result.append("All 1s on row " + i + "\n");
-            //全1行
-
             if (columnSum == 0) result.append("All 0s on column " + i + "\n");
             if (columnSum == array.length) result.append("All 1s on column " + i + "\n");
         }
