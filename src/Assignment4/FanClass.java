@@ -13,9 +13,15 @@ class Fan {
 
     }
 
-    void setFan(String newspeed, double newradius, String newcolor) {
+    Fan(double newradius, String newcolor) {
+        radius = newradius;
+        color = newcolor;
+    }
 
-
+    void setSpeed(int newspeed) {
+        if (newspeed == SLOW) speed = SLOW;
+        else if (newspeed == MEDIUM) speed = MEDIUM;
+        else if (newspeed == FAST) speed = FAST;
     }
 
     void turnOn() {
@@ -26,15 +32,27 @@ class Fan {
         on = false;
     }
 
-    //String fanToString() {
-    //}
+    String fanToString() {
+        if (on == true) {
+            return speed + " " + color + " " + radius;
+        } else {
+            return color + " " + radius + " fan is off";
+        }
+    }
 
 }
 
 public class FanClass {
 
     public static void main(String[] args) {
-
+        Fan fan1 = new Fan(10, "yellow");
+        fan1.setSpeed(3);
+        fan1.turnOn();
+        Fan fan2 = new Fan(5, "blue");
+        fan2.setSpeed(2);
+        fan2.turnOff();
+        System.out.println(fan1.fanToString());
+        System.out.println(fan2.fanToString());
     }
 
 }
