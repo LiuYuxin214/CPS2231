@@ -45,18 +45,18 @@ public class QuadraticEquationClass {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter a,b,c: ");
+        System.out.print("Enter a, b, c: ");
         double a, b, c;
         a = input.nextDouble();
         b = input.nextDouble();
         c = input.nextDouble();
-        QuadraticEquation qE = new QuadraticEquation(a, b, c);
-        if (qE.getDiscriminant() < 0) {
+        QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
+        if (quadraticEquation.getDiscriminant() < 0) {
             System.out.print("The equation has no real roots");
-        } else if (qE.getDiscriminant() == 0) {
-            System.out.print("The equation has one root " + qE.getRoot1());
-        } else if (qE.getDiscriminant() > 0) {
-            System.out.print("The equation has two roots " + qE.getRoot1() + " and " + qE.getRoot2());
+        } else if (quadraticEquation.getDiscriminant() == 0) {
+            System.out.print("The equation has one root " + quadraticEquation.getRoot1());
+        } else if (quadraticEquation.getDiscriminant() > 0) {
+            System.out.print("The equation has two roots " + quadraticEquation.getRoot1() + " and " + quadraticEquation.getRoot2());
         }
 
     }
