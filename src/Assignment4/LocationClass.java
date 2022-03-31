@@ -11,27 +11,6 @@ class Location {
 
     }
 
-}
-
-public class LocationClass {
-
-    public static void main(String[] args) {
-        int row, column;
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter the number of rows and columns in the array: ");
-        row = input.nextInt();
-        column = input.nextInt();
-        double[][] num = new double[row][column];
-        System.out.println("Enter the array: ");
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < column; j++) {
-                num[i][j] = input.nextDouble();
-            }
-        }
-        Location result = locateLargest(num);
-        System.out.println("The location of the largest element is " + result.maxValue + " at (" + result.row + ", " + result.column + ")");
-    }
-
     public static Location locateLargest(double[][] a) {
         Location location = new Location();
         location.nums = a;
@@ -51,4 +30,27 @@ public class LocationClass {
         }
         return location;
     }
+
+}
+
+public class LocationClass {
+
+    public static void main(String[] args) {
+        int row, column;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the number of rows and columns in the array: ");
+        row = input.nextInt();
+        column = input.nextInt();
+        double[][] num = new double[row][column];
+        System.out.println("Enter the array: ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                num[i][j] = input.nextDouble();
+            }
+        }
+        Location result = Location.locateLargest(num);
+        System.out.println("The location of the largest element is " + result.maxValue + " at (" + result.row + ", " + result.column + ")");
+    }
+
+
 }
