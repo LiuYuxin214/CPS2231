@@ -9,14 +9,9 @@ public class Stock {
     public Stock() {
     }
 
-    public Stock(String newsymbol, String newname) {
-        symbol = newsymbol;
-        name = newname;
-    }
-
-    public static void main(String[] args) {
-        Stock a = new Stock("ORCL", "Oracle Corporation");
-        System.out.println(a.getChangePercent());
+    public Stock(String symbol, String name) {
+        this.symbol = symbol;
+        this.name = name;
     }
 
     public void setCurrentPrice(double newprice) {
@@ -27,7 +22,14 @@ public class Stock {
         previousClosingPrice = newprice;
     }
 
+    public static void main(String[] args) {
+        Stock a = new Stock("ORCL", "Oracle Corporation");
+        a.setPreviousClosingPrice(34.5);
+        a.setCurrentPrice(34.35);
+        System.out.println(a.getChangePercent());
+    }
+
     public double getChangePercent() {
-        return (currentPrice - previousClosingPrice) / previousClosingPrice;
+        return (currentPrice - previousClosingPrice) / previousClosingPrice * 100;
     }
 }

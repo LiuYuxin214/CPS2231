@@ -1,4 +1,4 @@
-package Assignment4;
+package LabExercise09;
 
 class RegularPolygon {
     private int n = 3;
@@ -22,6 +22,18 @@ class RegularPolygon {
         this.side = side;
         this.x = x;
         this.y = y;
+    }
+
+    public static void main(String[] args) {
+        RegularPolygon regularPolygon1 = new RegularPolygon();
+        RegularPolygon regularPolygon2 = new RegularPolygon(6, 4);
+        RegularPolygon regularPolygon3 = new RegularPolygon(10, 4, 5.6, 7.8);
+        System.out.println("The perimeter1 is " + regularPolygon1.getPerimeter());
+        System.out.println("The area1 is " + regularPolygon1.getArea());
+        System.out.println("The perimeter2 is " + regularPolygon2.getPerimeter());
+        System.out.println("The area2 is " + regularPolygon2.getArea());
+        System.out.println("The perimeter3 is " + regularPolygon3.getPerimeter());
+        System.out.println("The area3 is " + regularPolygon3.getArea());
     }
 
     int getN() {
@@ -63,22 +75,6 @@ class RegularPolygon {
     double getArea() {
         double area = (n * Math.pow(side, 2)) / (4 * (Math.tan(Math.PI / n)));
         return area;
-    }
-
-}
-
-public class RegularPolygonClass {
-
-    public static void main(String[] args) {
-        RegularPolygon regularPolygon1 = new RegularPolygon();
-        RegularPolygon regularPolygon2 = new RegularPolygon(6, 4);
-        RegularPolygon regularPolygon3 = new RegularPolygon(10, 4, 5.6, 7.8);
-        System.out.println("The perimeter1 is " + regularPolygon1.getPerimeter());
-        System.out.println("The area1 is " + regularPolygon1.getArea());
-        System.out.println("The perimeter2 is " + regularPolygon2.getPerimeter());
-        System.out.println("The area2 is " + regularPolygon2.getArea());
-        System.out.println("The perimeter3 is " + regularPolygon3.getPerimeter());
-        System.out.println("The area3 is " + regularPolygon3.getArea());
     }
 
 }

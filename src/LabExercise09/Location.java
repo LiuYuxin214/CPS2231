@@ -1,4 +1,4 @@
-package Assignment4;
+package LabExercise09;
 
 import java.util.Scanner;
 
@@ -31,10 +31,6 @@ class Location {
         return location;
     }
 
-}
-
-public class LocationClass {
-
     public static void main(String[] args) {
         int row, column;
         Scanner input = new Scanner(System.in);
@@ -51,6 +47,5 @@ public class LocationClass {
         Location result = Location.locateLargest(num);
         System.out.println("The location of the largest element is " + result.maxValue + " at (" + result.row + ", " + result.column + ")");
     }
-
 
 }

@@ -1,21 +1,32 @@
-package Assignment4;
+package LabExercise09;
 
 import java.util.Date;
 
 class Account {
-    private final Date dateCreated;
+    private final java.util.Date dateCreated;
     private int id = 0;
     private double balance = 0;
     private double annualInterestRate = 0;
 
     Account() {
-        dateCreated = new Date();
+        dateCreated = new java.util.Date();
     }
 
     Account(int newid, double newbalance) {
         id = newid;
         balance = newbalance;
         dateCreated = new Date();
+    }
+
+    public static void main(String[] args) {
+        Account a = new Account(1122, 20000);
+        a.setAnnualInterestRate(4.5);
+        a.withdraw(2500);
+        a.deposit(3000);
+        System.out.println(a.getBalance());
+        System.out.println(a.getMonthlyInterest());
+        System.out.println(a.getDateCreate());
+
     }
 
     int getId() {
@@ -62,20 +73,5 @@ class Account {
         balance += money;
     }
 
-
-}
-
-public class AccountClass {
-
-    public static void main(String[] args) {
-        Account a = new Account(1122, 20000);
-        a.setAnnualInterestRate(4.5);
-        a.withdraw(2500);
-        a.deposit(3000);
-        System.out.println(a.getBalance());
-        System.out.println(a.getMonthlyInterest());
-        System.out.println(a.getDateCreate());
-
-    }
 
 }

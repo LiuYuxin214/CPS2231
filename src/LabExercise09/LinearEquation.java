@@ -1,4 +1,4 @@
-package Assignment4;
+package LabExercise09;
 
 import java.util.Scanner;
 
@@ -17,6 +17,24 @@ class LinearEquation {
         this.d = d;
         this.e = e;
         this.f = f;
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a, b, c, d, e, f: ");
+        double a, b, c, d, e, f;
+        a = input.nextDouble();
+        b = input.nextDouble();
+        c = input.nextDouble();
+        d = input.nextDouble();
+        e = input.nextDouble();
+        f = input.nextDouble();
+        LinearEquation linearEquation = new LinearEquation(a, b, c, d, e, f);
+        if (linearEquation.isSolvable() == false)
+            System.out.println("The equation has no solution");
+        else {
+            System.out.println("x is " + linearEquation.getX() + " and y is " + linearEquation.getY());
+        }
     }
 
     double getA() {
@@ -53,28 +71,6 @@ class LinearEquation {
 
     double getY() {
         return (a * f - e * c) / (a * d - b * c);
-    }
-}
-
-public class LinearEquationClass {
-
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter a, b, c, d, e, f: ");
-        double a, b, c, d, e, f;
-        a = input.nextDouble();
-        b = input.nextDouble();
-        c = input.nextDouble();
-        d = input.nextDouble();
-        e = input.nextDouble();
-        f = input.nextDouble();
-        LinearEquation linearEquation = new LinearEquation(a, b, c, d, e, f);
-        if (linearEquation.isSolvable() == false)
-            System.out.println("The equation has no solution");
-        else {
-            System.out.println("x is " + linearEquation.getX() + " and y is " + linearEquation.getY());
-        }
-
     }
 
 }

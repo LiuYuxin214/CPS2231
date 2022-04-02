@@ -1,4 +1,4 @@
-package Assignment4;
+package LabExercise09;
 
 class Fan {
     final int SLOW = 1;
@@ -16,6 +16,17 @@ class Fan {
     Fan(double newradius, String newcolor) {
         radius = newradius;
         color = newcolor;
+    }
+
+    public static void main(String[] args) {
+        Fan fan1 = new Fan(10, "yellow");
+        fan1.setSpeed(3);
+        fan1.turnOn();
+        Fan fan2 = new Fan(5, "blue");
+        fan2.setSpeed(2);
+        fan2.turnOff();
+        System.out.println(fan1.fanToString());
+        System.out.println(fan2.fanToString());
     }
 
     void setSpeed(int newspeed) {
@@ -38,21 +49,6 @@ class Fan {
         } else {
             return color + " " + radius + " fan is off";
         }
-    }
-
-}
-
-public class FanClass {
-
-    public static void main(String[] args) {
-        Fan fan1 = new Fan(10, "yellow");
-        fan1.setSpeed(3);
-        fan1.turnOn();
-        Fan fan2 = new Fan(5, "blue");
-        fan2.setSpeed(2);
-        fan2.turnOff();
-        System.out.println(fan1.fanToString());
-        System.out.println(fan2.fanToString());
     }
 
 }

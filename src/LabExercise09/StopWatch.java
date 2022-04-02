@@ -1,4 +1,4 @@
-package Assignment4;
+package LabExercise09;
 
 import java.util.Date;
 import java.util.Random;
@@ -27,10 +27,6 @@ class StopWatch {
         return endTime - startTime;
     }
 
-}
-
-public class StopWatchClass {
-
     public static void main(String[] args) {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
@@ -55,5 +51,4 @@ public class StopWatchClass {
         stopWatch.stop();
         System.out.println("The execution time of sorting 100,000 numbers using selection sort is " + stopWatch.getElapsedTime());
     }
-
 }
