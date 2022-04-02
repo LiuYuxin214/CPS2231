@@ -23,7 +23,7 @@ public class Stock {
     }
 
     public double getChangePercent() {
-        return (currentPrice - previousClosingPrice) / previousClosingPrice;
+        return (currentPrice - previousClosingPrice) / previousClosingPrice * 100;
     }
 
     public static void main(String[] args) {
