@@ -22,14 +22,14 @@ public class Stock {
         previousClosingPrice = newprice;
     }
 
+    public double getChangePercent() {
+        return (currentPrice - previousClosingPrice) / previousClosingPrice * 100;
+    }
+
     public static void main(String[] args) {
         Stock a = new Stock("ORCL", "Oracle Corporation");
         a.setPreviousClosingPrice(34.5);
         a.setCurrentPrice(34.35);
         System.out.println(a.getChangePercent());
-    }
-
-    public double getChangePercent() {
-        return (currentPrice - previousClosingPrice) / previousClosingPrice * 100;
     }
 }

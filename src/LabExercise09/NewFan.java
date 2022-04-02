@@ -18,27 +18,6 @@ class NewFan {
         this.color = color;
     }
 
-    public static void main(String[] args) {
-        NewFan newFan1 = new NewFan();
-        newFan1.setSpeed(3);
-        newFan1.setColor("yellow");
-        newFan1.setOn(true);
-        newFan1.setRadius(10);
-        System.out.println(newFan1.getSpeed());
-        System.out.println(newFan1.getColor());
-        System.out.println(newFan1.getOn());
-        System.out.println(newFan1.getRadius());
-        NewFan newFan2 = new NewFan();
-        newFan2.setSpeed(2);
-        newFan2.setColor("blue");
-        newFan2.setOn(false);
-        newFan2.setRadius(5);
-        System.out.println(newFan2.getSpeed());
-        System.out.println(newFan2.getColor());
-        System.out.println(newFan2.getOn());
-        System.out.println(newFan2.getRadius());
-    }
-
     int getSpeed() {
         return speed;
     }
@@ -71,6 +50,27 @@ class NewFan {
 
     void setOn(boolean on) {
         this.on = on;
+    }
+
+    public static void main(String[] args) {
+        NewFan newFan1 = new NewFan();
+        newFan1.setSpeed(3);
+        newFan1.setColor("yellow");
+        newFan1.setOn(true);
+        newFan1.setRadius(10);
+        System.out.println(newFan1.getSpeed());
+        System.out.println(newFan1.getColor());
+        System.out.println(newFan1.getOn());
+        System.out.println(newFan1.getRadius());
+        NewFan newFan2 = new NewFan();
+        newFan2.setSpeed(2);
+        newFan2.setColor("blue");
+        newFan2.setOn(false);
+        newFan2.setRadius(5);
+        System.out.println(newFan2.getSpeed());
+        System.out.println(newFan2.getColor());
+        System.out.println(newFan2.getOn());
+        System.out.println(newFan2.getRadius());
     }
 
 }

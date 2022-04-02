@@ -13,24 +13,6 @@ class QuadraticEquation {
         this.c = c;
     }
 
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter a, b, c: ");
-        double a, b, c;
-        a = input.nextDouble();
-        b = input.nextDouble();
-        c = input.nextDouble();
-        QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
-        if (quadraticEquation.getDiscriminant() < 0) {
-            System.out.print("The equation has no real roots");
-        } else if (quadraticEquation.getDiscriminant() == 0) {
-            System.out.print("The equation has one root " + quadraticEquation.getRoot1());
-        } else if (quadraticEquation.getDiscriminant() > 0) {
-            System.out.print("The equation has two roots " + quadraticEquation.getRoot1() + " and " + quadraticEquation.getRoot2());
-        }
-
-    }
-
     double getA() {
         return a;
     }
@@ -55,6 +37,24 @@ class QuadraticEquation {
     double getRoot2() {
         if (getDiscriminant() < 0) return 0;
         return (-b - Math.sqrt(getDiscriminant())) / (2 * a);
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a, b, c: ");
+        double a, b, c;
+        a = input.nextDouble();
+        b = input.nextDouble();
+        c = input.nextDouble();
+        QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
+        if (quadraticEquation.getDiscriminant() < 0) {
+            System.out.print("The equation has no real roots");
+        } else if (quadraticEquation.getDiscriminant() == 0) {
+            System.out.print("The equation has one root " + quadraticEquation.getRoot1());
+        } else if (quadraticEquation.getDiscriminant() > 0) {
+            System.out.print("The equation has two roots " + quadraticEquation.getRoot1() + " and " + quadraticEquation.getRoot2());
+        }
+
     }
 
 }

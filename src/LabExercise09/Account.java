@@ -18,17 +18,6 @@ class Account {
         dateCreated = new Date();
     }
 
-    public static void main(String[] args) {
-        Account a = new Account(1122, 20000);
-        a.setAnnualInterestRate(4.5);
-        a.withdraw(2500);
-        a.deposit(3000);
-        System.out.println(a.getBalance());
-        System.out.println(a.getMonthlyInterest());
-        System.out.println(a.getDateCreate());
-
-    }
-
     int getId() {
         return id;
     }
@@ -73,5 +62,15 @@ class Account {
         balance += money;
     }
 
+    public static void main(String[] args) {
+        Account a = new Account(1122, 20000);
+        a.setAnnualInterestRate(4.5);
+        a.withdraw(2500);
+        a.deposit(3000);
+        System.out.println(a.getBalance());
+        System.out.println(a.getMonthlyInterest());
+        System.out.println(a.getDateCreate());
+
+    }
 
 }
