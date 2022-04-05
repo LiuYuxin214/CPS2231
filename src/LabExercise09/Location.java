@@ -17,10 +17,10 @@ class Location {
         location.row = 0;
         location.column = 0;
         location.maxValue = -1;
-        int temprow = location.nums.length;
-        int tempcolumn = location.nums[0].length;
-        for (int i = 0; i < temprow; i++) {
-            for (int j = 0; j < tempcolumn; j++) {
+        int rowSize = location.nums.length;
+        int columnSize = location.nums[0].length;
+        for (int i = 0; i < rowSize; i++) {
+            for (int j = 0; j < columnSize; j++) {
                 if (location.nums[i][j] > location.maxValue) {
                     location.maxValue = location.nums[i][j];
                     location.row = i;

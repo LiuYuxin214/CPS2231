@@ -87,7 +87,6 @@ public class MyInteger {
         System.out.println(MyInteger.isOdd(5));
         System.out.println(MyInteger.isPrime(5));
         System.out.println(myInteger.equals(5));
-        System.out.println(myInteger.equals(1));
         char[] arr = {'5'};
         System.out.println(MyInteger.parseInt(arr));
         System.out.println(MyInteger.parseInt("5"));

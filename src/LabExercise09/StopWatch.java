@@ -44,8 +44,8 @@ class StopWatch {
                     min = nums[j];
                     mark = j;
                 }
-                nums[mark] = 999999;
             }
+            nums[mark] = 999999;
             results[i] = min;
         }
         stopWatch.stop();
