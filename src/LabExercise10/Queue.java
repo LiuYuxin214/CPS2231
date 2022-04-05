@@ -36,7 +36,7 @@ public class Queue {
         return this.size == 0;
     }
 
-    public int size() {
+    public int getSize() {
         return this.size;
     }
 

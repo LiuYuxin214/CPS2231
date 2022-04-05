@@ -49,8 +49,24 @@ public class MyInteger {
         return true;
     }
 
+    public static boolean isEven(MyInteger myInteger) {
+        return myInteger.isEven();
+    }
+
+    public static boolean isOdd(MyInteger myInteger) {
+        return myInteger.isOdd();
+    }
+
+    public static boolean isPrime(MyInteger myInteger) {
+        return myInteger.isPrime();
+    }
+
     public boolean equals(int num) {
         return this.value == num;
+    }
+
+    public boolean euqals(MyInteger myInteger) {
+        return equals(myInteger.getValue());
     }
 
     public static int parseInt(char[] arr) {
