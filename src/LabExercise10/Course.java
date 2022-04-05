@@ -3,7 +3,7 @@ package LabExercise10;
 public class Course {
 
     private final String courseName;
-    private final String[] students = new String[100];
+    private String[] students = new String[100];
     private int numberOfStudents;
 
     public Course(String courseName) {
@@ -11,8 +11,18 @@ public class Course {
     }
 
     public void addStudent(String student) {
-        students[numberOfStudents] = student;
-        numberOfStudents++;
+        if (numberOfStudents < students.length) {
+            students[numberOfStudents] = student;
+            numberOfStudents++;
+        } else {
+            String[] newStudents = new String[students.length * 2];
+            for (int i = 0; i < students.length; i++) {
+                newStudents[i] = students[i];
+            }
+            students = newStudents;
+            students[numberOfStudents] = student;
+            numberOfStudents++;
+        }
     }
 
     public String[] getStudents() {
@@ -28,10 +38,37 @@ public class Course {
     }
 
     public void dropStudent(String student) {
-// Left as an exercise in Programming Exercise 10.9
+        for (int i = 0; i < students.length; i++) {
+            if (students[i].equals(student)) {
+                students[i] = null;
+                numberOfStudents--;
+                int mark = i;
+                for (int j = mark; j < students.length - 1; j++) {
+                    students[j] = students[j + 1];
+                }
+                break;
+            }
+        }
+    }
+
+    public void clear() {
+        for (int i = 0; i < students.length; i++) {
+            students[i] = null;
+        }
+        numberOfStudents = 0;
     }
 
     public static void main(String[] args) {
-
+        Course course = new Course("Java");
+        course.addStudent("Mike");
+        course.addStudent("John");
+        course.addStudent("Mary");
+        course.dropStudent("John");
+        String[] students = course.getStudents();
+        for (int i = 0; i < students.length; i++) {
+            if (students[i] != null) {
+                System.out.println(students[i]);
+            }
+        }
     }
 }
