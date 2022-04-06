@@ -33,7 +33,7 @@ public class MergeSort {
         while (j <= high) {
             temp[k++] = a[j++];
         }
-        // 用temp数组中排序好的数覆盖nums数组
+        // 用temp数组中排序好的数覆盖a数组
         for (int n = 0; n < temp.length; n++) {
             a[n + low] = temp[n];
         }
