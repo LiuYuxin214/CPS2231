@@ -1,5 +1,6 @@
 package Workshop;
 
+//O(n log n)
 public class MergeSort {
     public static void MergeSort(int[] a, int low, int high) {
         int mid = (low + high) / 2;
@@ -32,9 +33,9 @@ public class MergeSort {
         while (j <= high) {
             temp[k++] = a[j++];
         }
-        // 把新数组中的数覆盖nums数组
-        for (int x = 0; x < temp.length; x++) {
-            a[x + low] = temp[x];
+        // 用temp数组中排序好的数覆盖nums数组
+        for (int n = 0; n < temp.length; n++) {
+            a[n + low] = temp[n];
         }
     }
 

@@ -1,5 +1,6 @@
 package Workshop;
 
+//O(n)
 public class CountingSort {
     public static void main(String[] args) {
 
