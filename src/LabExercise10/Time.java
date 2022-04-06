@@ -1,49 +1,44 @@
 package LabExercise10;
 
-import java.util.Date;
-
 public class Time {
 
-    int hour, minute, second;
+    long hour, minute, second;
 
     public Time() {
-        Date date = new Date();
-        hour = date.getHours();
-        minute = date.getMinutes();
-        second = date.getSeconds();
+        hour = System.currentTimeMillis() % (1000 * 3600 * 24) / 1000 / 3600;
+        minute = System.currentTimeMillis() % (1000 * 3600) / 1000 / 60;
+        second = System.currentTimeMillis() % (1000 * 60) / 1000;
     }
 
     public Time(long elapseTime) {
-        Date date = new Date(elapseTime);
-        hour = date.getHours() - 8;
-        minute = date.getMinutes();
-        second = date.getSeconds();
+        hour = elapseTime % (1000 * 3600 * 24) / 1000 / 3600;
+        minute = elapseTime % (1000 * 3600) / 1000 / 60;
+        second = elapseTime % (1000 * 60) / 1000;
 
     }
 
-    public Time(int hour, int minute, int second) {
+    public Time(long hour, long minute, long second) {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
     }
 
-    public int getHour() {
+    public long getHour() {
         return hour;
     }
 
-    public int getMinute() {
+    public long getMinute() {
         return minute;
     }
 
-    public int getSecond() {
+    public long getSecond() {
         return second;
     }
 
     public void setTime(long elapseTime) {
-        Date date = new Date(elapseTime);
-        hour = date.getHours() - 8;
-        minute = date.getMinutes();
-        second = date.getSeconds();
+        hour = elapseTime % (1000 * 3600 * 24) / 1000 / 3600;
+        minute = elapseTime % (1000 * 3600) / 1000 / 60;
+        second = elapseTime % (1000 * 60) / 1000;
     }
 
     public static void main(String[] args) {

@@ -61,12 +61,12 @@ public class MyInteger {
         return myInteger.isPrime();
     }
 
-    public boolean equals(int num) {
-        return this.value == num;
+    public boolean equals(int value) {
+        return this.value == value;
     }
 
-    public boolean euqals(MyInteger myInteger) {
-        return equals(myInteger.getValue());
+    public boolean equals(MyInteger myInteger) {
+        return this.value == myInteger.value;
     }
 
     public static int parseInt(char[] arr) {
