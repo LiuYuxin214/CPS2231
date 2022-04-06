@@ -19,7 +19,6 @@ public class CountingSort {
         }
         // 创建结果数组
         int[] result = new int[A.length];
-        // 创建结果数组的起始索引
         int index = 0;
         // 遍历计数数组，将计数数组的索引填充到结果数组中
         for (int i = 0; i < count.length; i++) {

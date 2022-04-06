@@ -41,8 +41,8 @@ public class MergeSort {
     public static void main(String[] args) {
         int[] a = {2, 4, 6, 1, 3, 7, 9, 8, 5};
         MergeSort(a, 0, a.length - 1);
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
+        for (int j : a) {
+            System.out.print(j + " ");
         }
     }
 }
