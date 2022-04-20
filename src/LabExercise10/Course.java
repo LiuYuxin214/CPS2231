@@ -42,8 +42,7 @@ public class Course {
             if (students[i].equals(student)) {
                 students[i] = null;
                 numberOfStudents--;
-                int mark = i;
-                for (int j = mark; j < students.length - 1; j++) {
+                for (int j = i; j < numberOfStudents; j++) {
                     students[j] = students[j + 1];
                 }
                 break;

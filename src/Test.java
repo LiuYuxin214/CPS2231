@@ -17,6 +17,7 @@ public class Test {
     }
 
     public static void swap1(Circle x, Circle y) {//给circle1 一个新名字x，给circle2 一个新名字y
+        x = new Circle(10);
         Circle temp = x;
         x = y;
         y = temp;
