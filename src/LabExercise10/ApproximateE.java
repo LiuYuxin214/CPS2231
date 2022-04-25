@@ -2,7 +2,7 @@ package LabExercise10;
 
 import java.math.BigDecimal;
 
-public class ApproximateE {
+class ApproximateE {
     public static BigDecimal bigFactorial(BigDecimal bd) {
         if (bd.compareTo(new BigDecimal(1)) == 0)
             return bd;

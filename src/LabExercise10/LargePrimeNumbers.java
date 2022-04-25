@@ -23,7 +23,6 @@ public class LargePrimeNumbers {
                 count++;
             }
             bigNum = bigNum.add(new BigDecimal(1));
-
         }
     }
 }

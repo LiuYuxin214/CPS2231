@@ -21,7 +21,7 @@ public class findMode {
     }
 
     public static void main(String[] args) {
-        int[] nums = {2, 5, 6, 7, 7, 10, 10, 11, 11, 13, 15, 15, 15, 19, 20, 20};
+        int[] nums = {1, 2, 3};
         System.out.println(findMode(nums));
     }
 }
