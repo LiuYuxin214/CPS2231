@@ -2,63 +2,63 @@ package LabExercise09;
 
 import java.util.Date;
 
-class Account {
-    private final java.util.Date dateCreated;
-    private int id = 0;
-    private double balance = 0;
-    private double annualInterestRate = 0;
+public class Account {
+    final java.util.Date dateCreated;
+    int id = 0;
+    double balance = 0;
+    double annualInterestRate = 0;
 
-    Account() {
+    public Account() {
         dateCreated = new java.util.Date();
     }
 
-    Account(int newid, double newbalance) {
+    public Account(int newid, double newbalance) {
         id = newid;
         balance = newbalance;
         dateCreated = new Date();
     }
 
-    int getId() {
+    public int getId() {
         return id;
     }
 
-    void setId(int newid) {
+    public void setId(int newid) {
         id = newid;
     }
 
-    double getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    void setBalance(double newbalance) {
+    public void setBalance(double newbalance) {
         balance = newbalance;
     }
 
-    double getAnnualInterestRate() {
+    public double getAnnualInterestRate() {
         return annualInterestRate;
     }
 
-    void setAnnualInterestRate(double newannualInterestRate) {
+    public void setAnnualInterestRate(double newannualInterestRate) {
         annualInterestRate = newannualInterestRate / 100;
     }
 
-    double getMonthlyInterestRate() {
+    public double getMonthlyInterestRate() {
         return annualInterestRate / 12;
     }
 
-    double getMonthlyInterest() {
+    public double getMonthlyInterest() {
         return (annualInterestRate / 12) * balance;
     }
 
-    String getDateCreate() {
+    public String getDateCreate() {
         return dateCreated.toString();
     }
 
-    void withdraw(double money) {
+    public void withdraw(double money) {
         balance -= money;
     }
 
-    void deposit(double money) {
+    public void deposit(double money) {
         balance += money;
     }
 
