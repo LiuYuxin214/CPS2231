@@ -3,7 +3,7 @@ package LabExercise13;
 class Rational extends Number implements Comparable<Rational> {
     // Data fields for numerator and denominator
 
-    private final long[] r = new long[2];
+    private long[] r = new long[2];
 
     /**
      * Construct a rational with default properties
